@@ -7,6 +7,27 @@ import redis.clients.jedis.JedisPubSub;
 @Component
 public class Subscriber {
 
+
+
+
+
+//    In Redis, channels are created implicitly when a message is published to a channel that does not already exist.
+//    You don't need to create channels explicitly before subscribing to them.
+//
+//    When you subscribe to a channel that doesn't exist yet, the subscription will wait for messages to be published to that channel.
+//    Once a message is published to the channel, the channel will be created automatically, and the subscribed clients will receive the message.
+//
+//    Similarly, if there are no subscribers left for a channel, Redis will automatically remove the channel.
+//    So, in Redis, channels are created and removed dynamically based on the presence of published messages and active subscribers.
+
+
+
+
+
+
+
+
+
     public Subscriber() {
 //
         Jedis jedis = new Jedis("redis://localhost:6379");
